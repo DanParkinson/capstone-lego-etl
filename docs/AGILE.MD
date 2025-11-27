@@ -7,13 +7,21 @@
 - So that the ETL pipeline is reproducible.
 
 #### Acceptance Criteria
-- [ ] Raw CSV downloads if missing
-- [ ] Appropriate log entry created
-- [ ] If the file already exists, ETL skips download and logs it
-- [ ] Data loads into a pandas DataFrame
+- [x] Raw CSV downloads if missing
+- [x] Appropriate log entry created
+- [x] If the file already exists, ETL skips download and logs it
+- [x] Data loads into a pandas DataFrame
 
 #### Tests
-- [ ] placeholder
+- [ ] extract_lego.py
+  - [x] test_extract_lego_data_returns_dataframe
+- [ ] kaggle_downloader.py
+  - [x] test_kaggle_downloader_authentication
+  - [x] test_kaggle_downloader_download_called
+  - [x] test_kaggle_downloader_returned_csv_path
+  - [x] test_kaggle_downloader_return_error_for_no_csv
+- [ ] extract.py
+  - [x] test_extract_data_returns_dataframe
 
 ### US2 — Load Raw CSV into DataFrame
 - As a developer, I want to load the raw CSV into a DataFrame,
