@@ -7,6 +7,7 @@ from unittest.mock import patch, MagicMock
 from src.extract.extract_lego import extract_lego_data
 from src.extract.kaggle_downloader import download_kaggle_csv, DATASET, RAW_DIR
 from src.extract.extract import extract_data, RAW_FILE
+from src.utils.raw_validation import validate_raw_lego_data, EXPECTED_COLUMNS
 
 
 # ===============
@@ -107,7 +108,6 @@ def test_kaggle_downloader_return_error_for_no_csv(mock_api_cls, mock_glob):
 # Needs
 # Data skips download when file exists
 # Data downloads when file missing
-# returns the dataframe from extract_lego_data
 # ===============
 @patch("src.extract.extract.RAW_FILE")
 @patch("src.extract.extract.extract_lego_data")
@@ -126,3 +126,27 @@ def test_extract_data_returns_dataframe(mock_extract_lego_data, mock_raw):
     # Assert
     assert isinstance(result, pd.DataFrame)
     assert result.equals(mock_df)
+
+
+# ===============
+# src/utils/raw_validation.py
+# ===============
+def test_validate_raw_lego_data_structure_ok():
+    """
+    Test validation passes when columns match expected structure.
+    """
+    df = pd.DataFrame(columns=EXPECTED_COLUMNS)
+
+    # Should not raise error
+    validate_raw_lego_data(df)
+
+
+def test_validate_raw_lego_data_structure_fails():
+    """
+    Test validation raises ValueError for incorrect column names.
+    """
+
+    df = pd.DataFrame(columns=["wrong", "columns"])
+
+    with pytest.raises(ValueError):
+        validate_raw_lego_data(df)

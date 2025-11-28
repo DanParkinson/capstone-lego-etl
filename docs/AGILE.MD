@@ -28,13 +28,15 @@
 - So that I can inspect and validate the raw dataset.
 
 #### Acceptance Criteria
-- [ ] DataFrame loads without errors
-- [ ] Column names match expected structure
-- [ ] Data types logged for reference
-- [ ] Missing values summary logged
+- [x] DataFrame loads without errors
+- [x] Column names match expected structure
+- [x] Data types logged for reference
+- [x] Missing values summary logged
 
 #### Tests
-- [ ] placeholder
+- [] src/utils/raw_validation.py
+  - [x] test_validate_raw_lego_data_structure_ok
+  - [x] test_validate_raw_lego_data_structure_fails
 
 ---
 
@@ -46,20 +48,37 @@
 
 #### Acceptance Criteria
 - [ ] Convert relevent to properly numeric columns
-  - [ ] ages - min age, max age
-  - [ ] list price - Rounded
-  - [ ] num_reviews
-  - [ ] Piece_count
-  - [ ] play_star_rating
-  - [ ] prod_id
-  - [ ] star_rating
-  - [ ] val_star_rating
-- [ ] Invalid numeric values become NaN
-- [ ] No string values remain in numeric columns
-- [ ] Cleaning is idempotent (running twice does not break data)
+  - [x] ages -> min age, max age - floats, non missing
+  - [x] list price - Rounded float
+  - [x] num_reviews - int - Nan -> 0
+  - [x] Piece_count - int
+  - [x] play_star_rating - Don't need to clean
+  - [x] prod_id - int
+  - [x] star_rating - Dont need to clean
+  - [x] val_star_rating - Dont need to clean
+- [x] Invalid numeric values become NaN
+- [x] No string values remain in numeric columns
 
 #### Tests
-- [ ] placeholder
+- [ ] src/transform/transform_numeric.py
+  - [ ] test_age
+    - [x] test_age_range
+    - [x] test_age_plus
+    - [x] test_age_fractional_values
+    - [ ] test_age_invalid
+  - [ ] list_price
+    - [x] test_list_price_converts_to_float
+    - [x] test_list_price_rounds_values
+    - [ ] test_list_price_invalid
+  - [ ] num_review
+    - [x] test_num_reviews_converts_to_int
+    - [x] test_num_reviews_replaces_nan_with_zero
+    - [ ] test_num_reviews_invalid
+  - [ ] piece_count
+    - [x] test_piece_count_converts_to_int
+    - [ ] test_piece_count_invalid
+  - [ ] prod_id
+    - [x] test_prod_id_converts_to_int
 
 ### US4 — Clean Text Fields
 - As a developer, I want to clean text-based columns,

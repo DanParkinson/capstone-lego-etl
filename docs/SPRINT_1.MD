@@ -1,5 +1,5 @@
-# User Story 1 – Data Acquisition, Extraction & Validation  
-## Fetch LEGO Dataset via Kaggle API
+# Epic 1 – Data Acquisition, Extraction & Validation  
+## User Stroy 1 - Fetch LEGO Dataset via Kaggle API
 
 ### Overview
 User Story 1 focused on implementing the **data acquisition stage** of the ETL pipeline. The goal was to fetch the LEGO dataset from Kaggle, store it in the local raw data directory, and load it into a pandas DataFrame for further processing. This story also required full unit test coverage for each component of the extraction process.
@@ -75,3 +75,80 @@ Unit tests were written and executed for all major behaviours:
 ## Status
 **User Story 1 is now complete.**  
 Next onto User story 2 where we will check the dataframe matches big metrics of the original file such as column names, amount of rows etc.
+ 
+## User Story 2 – Validate Raw LEGO Dataset After Extraction
+
+### Overview
+User Story 2 focused on implementing the **validation stage** of the ETL pipeline.  
+The purpose of this story was to ensure that the raw LEGO dataset—after being successfully extracted—matches the expected structure and quality before proceeding to the transformation phase.
+
+This step acts as a **quality gate**, verifying that the dataset:
+
+- loaded correctly into memory  
+- contains the correct column structure  
+- has consistent data types  
+- reports missing values for early issue detection  
+
+This story lays the foundation for safe, reliable data transformation in the next sprint.
+
+---
+
+## Workflow Summary
+
+### `run_etl.py`
+- Loads the raw dataset via `extract_data()`.
+- Immediately passes the resulting DataFrame into the validation stage.
+- Ensures that no transformation occurs unless the raw dataset passes validation.
+
+---
+
+### `raw_validation.py`
+Responsible for validating the raw LEGO dataset:
+
+- Defines the expected column structure for the dataset.
+- Compares the incoming DataFrame's columns to the expected list.
+- Logs useful metadata including:
+  - DataFrame column names  
+  - Data types for each column  
+  - Missing values summary  
+- Raises a `ValueError` if the structural validation fails.
+- Works as a safety step between extraction and cleaning.
+
+This module ensures that downstream processes never receive malformed data.
+
+---
+
+### Validation Logic
+The raw validation includes four key checks:
+
+1. **DataFrame loads without errors**
+   - Guaranteed via extraction.
+2. **Column names match expected structure**
+   - Prevents silent schema drift.
+3. **Data types logged for reference**
+   - Assists transformation planning.
+4. **Missing values summary logged**
+   - Helps identify early issues in the dataset.
+
+---
+
+## Testing Completed
+
+Unit tests were implemented to validate the behaviour of the raw dataset validator:
+
+### **raw_validation.py**
+- Test that validation **passes** when the DataFrame columns match the expected schema.
+- Test that validation **fails** with a `ValueValueError` when:
+  - columns differ  
+  - required columns are missing  
+
+These tests ensure schema integrity before transformation takes place.
+
+---
+
+## Status
+**User Story 2 is now complete.**  
+The dataset can now be trusted to have the correct structure before transformation.
+
+Next step: **User Story 3**, where we begin designing and implementing the data cleaning and transformation logic.
+
