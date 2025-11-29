@@ -43,21 +43,39 @@
 ## (2) Data Cleaning and Transformation
 
 ### US3 — Clean Numeric Columns
-- As a developer, I want to convert numeric-like columns into numeric types,
-- So that aggregations and visualisations work correctly.
+- As a developer, I want to convert numeric-like fields into proper numeric types,
+- So that calculations, aggregations, and visualisations work correctly.
 
 #### Acceptance Criteria
-- [ ] Convert relevent to properly numeric columns
-  - [x] ages -> min age, max age - floats, non missing
-  - [x] list price - Rounded float
-  - [x] num_reviews - int - Nan -> 0
-  - [x] Piece_count - int
-  - [x] play_star_rating - Don't need to clean
-  - [x] prod_id - int
-  - [x] star_rating - Dont need to clean
-  - [x] val_star_rating - Dont need to clean
-- [x] Invalid numeric values become NaN
-- [x] No string values remain in numeric columns
+
+- [ ] Clean and validate the following numeric-like columns:
+  - **ages**
+    - [x] Extract `age_min` and `age_max` into separate numeric columns
+    - [x] Ensure both are numeric (float)
+    - [x] No nulls after extraction
+    - [ ] Drop the original `ages` column
+  - **list_price**
+    - [x] Convert to float
+    - [x] Round to 2 decimal places
+    - [x] Replace invalid values with NaN
+    - [x] Convert dtype to float64
+  - **num_reviews**
+    - [x] Convert to int
+    - [x] Replace nulls with 0 (no reviews)
+    - [x] Remove or coerce invalid values
+    - [x] Ensure dtype is int64
+  - **piece_count**
+    - [x] Convert to int
+    - [x] Ensure dtype is int64
+  - **play_star_rating**
+    - [x] Convert to float
+    - [x] Allow NaN (not all sets are rated)
+    - [x] Ensure dtype is float64
+  - **prod_id**
+    - [x] Convert to int
+    - [x] Coerce invalid entries to NaN
+    - [x] Ensure dtype is int64
+    - [x] Note: `prod_id` is **not unique** (varies by country)
 
 #### Tests
 - [ ] src/transform/transform_numeric.py
@@ -80,18 +98,54 @@
   - [ ] prod_id
     - [x] test_prod_id_converts_to_int
 
-### US4 — Clean Text Fields
-- As a developer, I want to clean text-based columns,
-- So that descriptions can be displayed safely in the Streamlit app.
+### US4 — Clean Text Columns
+- As a developer, I want to clean all text-based columns,
+- So that descriptions, names, and categories display correctly in the Streamlit app.
 
 #### Acceptance Criteria
-- [ ] prod_desc and prod_long_desc contain no nulls
-- [ ] Whitespace trimmed
-- [ ] Text preserved (no truncation or corruption)
-- [ ] Encoding issues handled if present
+- [ ] Clean and validate the following text columns:
+  - **prod_desc**
+    - [x] Replace nulls with "No description available"
+    - [x] Ensure dtype is string
+  - **prod_long_desc**
+    - [x] Replace nulls with "No long description available"
+    - [x] Ensure dtype is string
+  - **review_difficulty**
+    - [x] Replace nulls with "Unrated"
+    - [x] Convert to lower case
+    - [x] Ensure dtype is string
+  - **set_name**
+    - [x] Replace nulls with "Unknown Set Name"
+    - [x] Ensure dtype is string
+  - **theme_name**
+    - [x] Replace nulls with "Unknown Theme"
+    - [x] Preserve trademarks (™, ®)
+    - [x] Ensure dtype is string
+  - **country**
+    - [x] Replace nulls with "Unknown"
+    - [x] Ensure dtype is string
 
 #### Tests
-- [ ] placeholder
+- [ ] src/transform/transform_text.py
+  - [ ] prod_desc
+    - [x] test_clean_prod_desc_fills_nulls
+    - [x] test_clean_prod_desc_ensures_string_type
+  - [ ] prod_long_desc
+    - [x] test_clean_prod_long_desc_fills_nulls
+    - [x] test_clean_prod_long_desc_ensures_string_type
+  - [ ] review_difficulty
+    - [x] test_clean_review_difficulty_fills_nulls
+    - [x] test_clean_review_difficulty_ensures_string_type
+    - [x] test_clean_review_difficulty_converts_to_lowercase
+  - [ ] set_name
+    - [x] test_clean_set_name_fills_nulls
+    - [x] test_clean_set_name_ensures_string_type
+  - [ ] theme_name
+    - [x] test_clean_theme_name_fills_nulls
+    - [x] test_clean_theme_name_ensures_string_type
+  - [ ] country
+    - [x] test_clean_country_fills_nulls
+    - [x] test_clean_country_ensures_string_type
 
 ### US5 — Remove Duplicates and Corrupted Rows
 - As a developer, I want to remove duplicate and invalid rows,

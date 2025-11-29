@@ -117,7 +117,6 @@ def clean_prod_id(df: pd.DataFrame) -> pd.DataFrame:
     """
     Clean prod_id:
         - convert to int
-        - check all unique
     """
 
     logger.info("Cleaning prod_id...")

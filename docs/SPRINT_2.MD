@@ -87,3 +87,94 @@ All required numeric columns have been cleaned and integrated into the pipeline,
 Additional negative-case tests remain as optional enhancements.
 
 Next step: **User Story 4 – Clean Text Fields**.
+## User Story 4 – Clean Text Columns
+
+### Overview  
+User Story 4 focused on cleaning and standardising all text-based columns in the LEGO dataset.  
+The goal was to ensure that descriptive fields, categorical labels, and country codes are consistent, non-null, and suitable for display within the Streamlit application.
+
+This user story required dedicated cleaning functions for each text column, null-handling, and a comprehensive suite of unit tests validating each transformation.
+
+---
+
+## Workflow Summary
+
+### `transform_text.py`
+This module contains individual cleaning functions for text and categorical fields. Each function:
+
+- Replaces missing or null values with a column-appropriate placeholder  
+- Converts the column to a consistent string dtype  
+- Applies any additional formatting (e.g., lowercase for difficulty categories)  
+- Preserves meaningful characters such as ™ and ®  
+- Ensures the column is ready for downstream consumption
+
+---
+
+## Cleaning Completed per Column
+
+| Column                | Cleaning Logic                                                                  | Result                               |
+| --------------------- | ------------------------------------------------------------------------------- | ------------------------------------ |
+| **prod_desc**         | Null → `"No description available"`, convert to string                          | Clean strings, no nulls              |
+| **prod_long_desc**    | Null → `"No long description available"`, convert to string, preserve structure | Clean long text, no nulls            |
+| **review_difficulty** | Null → `"unrated"`, convert to string, lowercase values                         | Normalised lowercase categories      |
+| **set_name**          | Null → `"Unknown Set Name"`, convert to string                                  | Clean strings, consistent formatting |
+| **theme_name**        | Null → `"Unknown Theme"`, convert to string                                     | Clean strings, trademarks preserved  |
+| **country**           | Null → `"Unknown"`, convert to string                                           | Clean ISO-like country codes         |
+
+---
+
+## Key Improvements  
+- All text columns are now guaranteed to be non-null  
+- Dtypes are consistent (string across all cleaned fields)  
+- Review difficulty categories standardised to lowercase  
+- All descriptive fields safe for direct rendering in Streamlit  
+- Clean, predictable input for downstream analytics and filtering
+
+---
+
+## Testing Completed  
+
+Unit tests were written to validate each cleaning function.  
+Tests focused on key behaviours:
+
+- Correct null replacement  
+- String conversion  
+- Whitespace removal  
+- Lowercasing where applicable  
+- Idempotent transformations  
+
+### `tests/unit_tests/test_transform_text.py`
+
+#### prod_desc  
+- ✓ `test_clean_prod_desc_fills_nulls`  
+- ✓ `test_clean_prod_desc_ensures_string_type`  
+
+#### prod_long_desc  
+- ✓ `test_clean_prod_long_desc_fills_nulls`  
+- ✓ `test_clean_prod_long_desc_ensures_string_type`  
+
+#### review_difficulty  
+- ✓ `test_clean_review_difficulty_fills_nulls`  
+- ✓ `test_clean_review_difficulty_ensures_string_type`  
+- ✓ `test_clean_review_difficulty_converts_to_lowercase`  
+
+#### set_name  
+- ✓ `test_clean_set_name_fills_nulls`  
+- ✓ `test_clean_set_name_ensures_string_type`  
+
+#### theme_name  
+- ✓ `test_clean_theme_name_fills_nulls`  
+- ✓ `test_clean_theme_name_ensures_string_type`  
+
+#### country  
+- ✓ `test_clean_country_fills_nulls`  
+- ✓ `test_clean_country_ensures_string_type`  
+
+---
+
+## Status  
+**User Story 4 is complete.**  
+All text columns have been standardised, tested, and integrated into the transformation pipeline.  
+The dataset is now consistently structured and ready for feature engineering and Streamlit presentation.
+
+Next step: **User Story 5 – Data Integrity Validation & Structural Testing**.
