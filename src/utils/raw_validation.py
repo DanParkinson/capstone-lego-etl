@@ -24,21 +24,28 @@ EXPECTED_COLUMNS = [
 
 def validate_raw_lego_data(df: pd.DataFrame) -> None:
     """
-    Validation function.
-    Validates the raw LEGO file after extraction.
+    Validates the raw LEGO dataset after extraction.
 
-    Logs:
-        column names, dtypes, missing values.
-
-    Raises:
-        Errors for structural mismatch
+    Checks:
+        - All expected columns are present
+        - No expected columns are missing
+    Warns:
+        - Extra unexpected columns
     """
 
     # Check structure
-    if list(df.columns) != EXPECTED_COLUMNS:
-        raise ValueError(
-            f"Column mismatch.\nExpected: {EXPECTED_COLUMNS}.\nGot: {list(df.columns)}"
-        )
+    df_cols = set(df.columns)
+    expected = set(EXPECTED_COLUMNS)
+
+    missing_columns = expected - df_cols
+    extra_columns = df_cols - expected
+
+    if missing_columns:
+        logger.error(f"Missing expected columns: {missing_columns}")
+        raise ValueError(f"Missing expected columns: {missing_columns}")
+
+    if extra_columns:
+        logger.warning(f"Unexpected extra columns: {extra_columns}")
 
     logger.info("Raw data structure validated successfully.")
 

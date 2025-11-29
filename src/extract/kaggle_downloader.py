@@ -18,15 +18,29 @@ def download_kaggle_csv() -> Path:
 
     logger.info("Authenticating with KAGGLE API...")
     api = KaggleApi()
-    api.authenticate()
 
+    # Authentication
+    try:
+        api.authenticate()
+    except Exception as e:
+        logger.error("Kaggle authentication failed.")
+        raise RuntimeError(f"Kaggle authentication failed: {e}")
+
+    # Download
     logger.info(f"Downloading {DATASET} into{RAW_DIR}")
-    api.dataset_download_files(DATASET, path=str(RAW_DIR), unzip=True)
+    try:
+        api.dataset_download_files(DATASET, path=str(RAW_DIR), unzip=True)
+    except Exception as e:
+        logger.error("Kaggle dataset download failed.")
+        raise RuntimeError(f"Kaggle dataset download failed: {e}")
 
-    # After Unzip find the csv file
+    # Locate CSV
     csv_files = list(RAW_DIR.glob("*.csv"))
     if not csv_files:
+        logger.error("No CSV found after Kaggle download")
         raise FileNotFoundError("No CSV found after Kaggle download.")
 
+    csv_path = csv_files[0]
     logger.info(f"Found CSV file: {csv_files[0]}")
-    return csv_files[0]
+
+    return csv_path
