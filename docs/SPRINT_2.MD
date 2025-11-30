@@ -87,6 +87,7 @@ All required numeric columns have been cleaned and integrated into the pipeline,
 Additional negative-case tests remain as optional enhancements.
 
 Next step: **User Story 4 – Clean Text Fields**.
+
 ## User Story 4 – Clean Text Columns
 
 ### Overview  
@@ -178,3 +179,73 @@ All text columns have been standardised, tested, and integrated into the transfo
 The dataset is now consistently structured and ready for feature engineering and Streamlit presentation.
 
 Next step: **User Story 5 – Data Integrity Validation & Structural Testing**.
+ 
+## User Story 5 – Remove Duplicates and Corrupted Rows
+
+### Overview  
+User Story 5 focused on strengthening the structural integrity of the cleaned LEGO dataset by removing corrupted rows and eliminating invalid duplicates.  
+The raw dataset contains multiple entries for the same product across different countries, so a **composite primary key** (`prod_id`, `country`) was adopted as the correct uniqueness definition.
+
+This cleaning step occurs **after numeric and text cleaning**, ensuring the key fields (`prod_id`, `country`) are properly typed and reliable before enforcing uniqueness.  
+The goal is to ensure that only genuinely duplicate or corrupted records are removed, while legitimate per-country entries remain intact.
+
+---
+
+## Workflow Summary
+
+### `transform_duplicates.py`  
+A dedicated module responsible for final structural validation:
+
+- Removes rows where `prod_id` is missing  
+- Removes rows where `country` is missing  
+- Removes true duplicates using the composite key (`prod_id`, `country`)  
+- Logs:
+  - Number of corrupted rows removed  
+  - Number of duplicate rows removed  
+- Returns a structurally clean DataFrame suitable for downstream loading
+
+This prevents accidental loss of valid rows while ensuring the dataset is fit for relational modelling.
+
+---
+
+### Integration in `transform.py`
+The overall transformation pipeline was updated to run duplicate cleaning **after all core cleaning steps**:
+
+1. Numeric column cleaning  
+2. Text column cleaning  
+3. **Duplicate and corruption removal (final structural step)**  
+4. Return the fully cleaned, validated DataFrame  
+
+Placing this step last ensures:
+
+- Numeric conversions are completed before evaluating uniqueness  
+- Text fixes prevent inconsistencies in country names  
+- Composite keys are correct and comparable  
+- Duplicate detection relies on fully-cleaned data rather than raw Kaggle inconsistencies
+
+---
+
+## Testing Completed
+
+### Duplicate Cleaning Tests  
+Focused tests confirm that duplicate removal behaves correctly:
+
+- Removes rows with missing `prod_id`  
+- Removes rows with missing `country`  
+- Removes only true duplicates based on (`prod_id`, `country`)  
+- Preserves legitimate entries representing different countries  
+
+These tests ensure the duplicate-cleaning logic is reliable and safe across varying scenarios.
+
+---
+
+## Status  
+**User Story 5 is complete.**  
+The dataset is now:
+
+- Free of corrupted rows  
+- Free of invalid duplicates  
+- Structurally consistent and ready for table modelling  
+
+Next step: **User Story 6 – Save Cleaned Dataset to Processed CSV.**
+

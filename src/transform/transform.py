@@ -1,6 +1,8 @@
 import pandas as pd
 from src.utils.logging_utils import setup_logger
 
+from src.transform.transform_duplicates import clean_duplicates
+
 from src.transform.transform_numeric import (
     clean_ages,
     clean_list_price,
@@ -45,5 +47,12 @@ def transform_data(df: pd.DataFrame) -> pd.DataFrame:
     df = clean_set_name(df)
     df = clean_theme_name(df)
     df = clean_country(df)
+
+    # duplicates
+    df = clean_duplicates(df)
+
+    # drop redundant ages column
+    df = df.drop(columns=["ages"], errors="ignore")
+
     logger.info("Transformation complete.")
     return df

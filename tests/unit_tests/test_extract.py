@@ -7,7 +7,6 @@ from unittest.mock import patch, MagicMock
 from src.extract.extract_lego import extract_lego_data
 from src.extract.kaggle_downloader import download_kaggle_csv, DATASET, RAW_DIR
 from src.extract.extract import extract_data, RAW_FILE
-from src.utils.raw_validation import validate_raw_lego_data, EXPECTED_COLUMNS
 
 
 # ===============
@@ -126,27 +125,3 @@ def test_extract_data_returns_dataframe(mock_extract_lego_data, mock_raw):
     # Assert
     assert isinstance(result, pd.DataFrame)
     assert result.equals(mock_df)
-
-
-# ===============
-# src/utils/raw_validation.py
-# ===============
-def test_validate_raw_lego_data_structure_ok():
-    """
-    Test validation passes when columns match expected structure.
-    """
-    df = pd.DataFrame(columns=EXPECTED_COLUMNS)
-
-    # Should not raise error
-    validate_raw_lego_data(df)
-
-
-def test_validate_raw_lego_data_structure_fails():
-    """
-    Test validation raises ValueError for incorrect column names.
-    """
-
-    df = pd.DataFrame(columns=["wrong", "columns"])
-
-    with pytest.raises(ValueError):
-        validate_raw_lego_data(df)

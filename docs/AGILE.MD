@@ -147,18 +147,26 @@
     - [x] test_clean_country_fills_nulls
     - [x] test_clean_country_ensures_string_type
 
-### US5 — Remove Duplicates and Corrupted Rows
-- As a developer, I want to remove duplicate and invalid rows,
+### US5 — Remove Duplicates and Corrupted Rows + cleaning validation
+- As a developer, I want to remove duplicates and validate clean data,
 - So that the dataset is clean and reliable.
 
 #### Acceptance Criteria
-- [ ] Duplicate rows removed
-- [ ] Row count difference logged
-- [ ] No invalid primary keys after cleaning
-- [ ] Output dataset falls within expected row count range
+- [x] Duplicate rows removed
+- [x] Row count difference logged
+- [x] No invalid primary keys after cleaning
+- [x] Output dataset falls within expected row count range
 
 #### Tests
-- [ ] placeholder
+- [ ] test_clean_duplicates.py
+  - [x] test_clean_duplicates_keeps_valid_multi_country_rows
+  - [x] test_clean_duplicates_removes_null_primary_keys
+- [ ] test_clean_validation.py
+  - [x] test_validate_clean_data_passes_for_valid_df
+  - [x] test_validate_clean_data_fails_for_non_float_column
+  - [x] test_validate_clean_data_fails_for_non_int_column
+  - [x] test_validate_clean_data_fails_for_null_text_column
+  - [x] test_validate_clean_data_fails_for_non_string_text_column
 
 ---
 
