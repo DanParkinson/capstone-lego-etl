@@ -1,0 +1,745 @@
+prod_id,set_name,piece_count,age_min,age_max,theme_id
+75823,Bird Island Egg Heist,277,6.0,12.0,1
+75822,Piggy Plane Attack,168,6.0,12.0,1
+75821,Piggy Car Escape,74,6.0,12.0,1
+21030,United States Capitol Building,1032,12.0,99.0,2
+21035,Solomon R. Guggenheim Museum®,744,12.0,99.0,2
+21039,Shanghai,597,12.0,99.0,2
+21028,New York City,598,12.0,99.0,2
+21029,Buckingham Palace,780,12.0,99.0,2
+21034,London,468,12.0,99.0,2
+21033,Chicago,444,12.0,99.0,2
+21036,Arc de Triomphe,386,12.0,99.0,2
+21019,The Eiffel Tower,321,12.0,99.0,2
+21032,Sydney,361,12.0,99.0,2
+17101,BOOST Creative Toolbox,847,7.0,12.0,3
+41597,Go Brick Me,708,10.0,99.0,5
+41614,Owen & Blue,234,10.0,99.0,5
+41613,Mr. Incredible & Frozone,160,10.0,99.0,5
+41609,Chewbacca™,149,10.0,99.0,5
+41608,Han Solo™,141,10.0,99.0,5
+41604,Iron Man MK50,101,10.0,99.0,5
+41605,Thanos,105,10.0,99.0,5
+41606,Star-Lord,113,10.0,99.0,5
+41607,Gamora,136,10.0,99.0,5
+41485,Finn,91,10.0,99.0,5
+40270,Valentine's Bee,140,10.0,99.0,5
+41599,Wonder Woman™,143,10.0,99.0,5
+41598,The Flash™,122,10.0,99.0,5
+41603,Kylo Ren™,130,10.0,99.0,5
+41602,Rey,119,10.0,99.0,5
+41600,Aquaman™,135,10.0,99.0,5
+41601,Cyborg™,108,10.0,99.0,5
+41611,Marty McFly & Doc Brown,240,10.0,99.0,5
+41610,Tactical Batman™ & Superman™,209,10.0,99.0,5
+40271,Easter Bunny,126,10.0,99.0,5
+41487,Lloyd,102,10.0,99.0,5
+41488,Master Wu,89,10.0,99.0,5
+41594,Captain Armando Salazar,118,10.0,99.0,5
+41486,Captain Phasma™,127,10.0,99.0,5
+41585,Batman™,91,10.0,99.0,5
+41590,Iron Man,96,10.0,99.0,5
+41593,Captain Jack Sparrow,109,10.0,99.0,5
+41592,The Hulk,93,10.0,99.0,5
+41595,Belle,139,10.0,99.0,5
+41596,Beast,116,10.0,99.0,5
+41588,The Joker™,151,10.0,99.0,5
+41591,Black Widow,143,10.0,99.0,5
+41587,Robin™,101,10.0,99.0,5
+41586,Batgirl™,99,10.0,99.0,5
+60175,Mountain River Heist,387,5.0,12.0,7
+60052,Cargo Train,888,6.0,12.0,7
+60051,High-speed Passenger Train,610,6.0,12.0,7
+60162,Jungle Air Drop Helicopter,1250,8.0,12.0,7
+60167,Coast Guard Head Quarters,792,6.0,12.0,7
+60161,Jungle Exploration Site,813,8.0,12.0,7
+60141,Police Station,894,6.0,12.0,7
+60188,Mining Experts Site,883,7.0,12.0,7
+60110,Fire Station,919,6.0,12.0,7
+60174,Mountain Police Headquarters,663,6.0,12.0,7
+60169,Cargo Terminal,740,6.0,12.0,7
+60140,Bulldozer Break-in,561,5.0,12.0,7
+60160,Jungle Mobile Lab,426,7.0,12.0,7
+60173,Mountain Arrest,303,5.0,12.0,7
+60166,Heavy-duty Rescue Helicopter,415,6.0,12.0,7
+60139,Mobile Command Center,374,6.0,12.0,7
+60154,Bus Station,337,5.0,12.0,7
+60186,Mining Heavy Driller,294,5.0,12.0,7
+60153,People pack – Fun at the beach,169,5.0,12.0,7
+60138,High-speed Chase,294,5.0,12.0,7
+60165,4 x 4 Response Unit,347,5.0,12.0,7
+60172,Dirt Road Pursuit,297,5.0,12.0,7
+60159,Jungle Halftrack Mission,378,6.0,12.0,7
+60108,Fire Response Unit,257,5.0,12.0,7
+60182,Pickup & Caravan,344,5.0,12.0,7
+60183,Heavy Cargo Transport,310,5.0,12.0,7
+60107,Fire Ladder Truck,214,5.0,12.0,7
+60180,Monster Truck,192,6.0,12.0,7
+60150,Pizza Van,249,5.0,12.0,7
+7499,Flexible and Straight Tracks,24,5.0,12.0,7
+60148,ATV Race Team,239,5.0,12.0,7
+60179,Ambulance Helicopter,190,5.0,12.0,7
+60181,Forest Tractor,174,5.0,12.0,7
+60137,Tow Truck Trouble,144,5.0,12.0,7
+60176,Wild River Escape,126,5.0,12.0,7
+60185,Mining Power Splitter,127,5.0,12.0,7
+10751,Mountain Police Chase,115,4.0,7.0,22
+60164,Sea Rescue Plane,141,5.0,12.0,7
+60158,Jungle Cargo Helicopter,201,6.0,12.0,7
+7895,Switching Tracks,8,5.0,12.0,7
+7280,Straight & Crossroad Plates,2,5.0,12.0,7
+7281,T-Junction & Curved Road Plates,2,5.0,12.0,7
+60177,Airshow Jet,87,5.0,12.0,7
+60157,Jungle Starter Set,88,5.0,12.0,7
+10750,Road Repair Truck,73,4.0,7.0,22
+60163,Coast Guard Starter Set,76,5.0,12.0,7
+60171,Mountain Fugitives,88,5.0,12.0,7
+60184,Mining Team,82,5.0,12.0,7
+60178,Speed Record Car,78,5.0,12.0,7
+60170,Off-Road Chase,37,5.0,12.0,7
+60156,Jungle Buggy,53,5.0,12.0,7
+60134,Fun in the park - City People Pack,157,5.0,12.0,7
+60125,Volcano Heavy-lift Helicopter,1277,8.0,12.0,7
+60124,Volcano Exploration Base,824,8.0,12.0,7
+60109,Fire Boat,412,6.0,12.0,7
+60143,Auto Transport Heist,403,5.0,12.0,7
+60129,Police Patrol Boat,200,5.0,12.0,7
+60123,Volcano Supply Helicopter,330,7.0,12.0,7
+60122,Volcano Crawler,324,6.0,12.0,7
+60119,Ferry,301,6.0,12.0,7
+60168,Sailboat Rescue,195,5.0,12.0,7
+60155,LEGO® City Advent Calendar,248,5.0,12.0,7
+60101,Airport Cargo Plane,157,5.0,12.0,7
+60121,Volcano Exploration Truck,175,5.0,12.0,7
+60117,Van & Caravan,250,5.0,12.0,7
+60142,Money Transporter,138,5.0,12.0,7
+60136,Police Starter Set,80,5.0,12.0,7
+60146,Stunt Truck,91,5.0,12.0,7
+60145,Buggy,81,5.0,12.0,7
+60120,Volcano Starter Set,83,5.0,12.0,7
+60100,Airport Starter Set,81,5.0,12.0,7
+60106,Fire Starter Set,90,5.0,12.0,7
+60135,ATV Arrest,47,5.0,12.0,7
+10698,LEGO® Large Creative Brick Box,790,4.0,99.0,8
+10696,LEGO® Medium Creative Brick Box,484,4.0,99.0,8
+10713,Creative Suitcase,213,4.0,99.0,8
+10693,LEGO® Creative Supplement,303,4.0,99.0,8
+10692,LEGO® Creative Bricks,221,4.0,99.0,8
+10701,Gray Baseplate,1,4.0,99.0,8
+10714,Blue Baseplate,1,4.0,99.0,8
+10700,Green Baseplate,1,4.0,99.0,8
+10706,Blue Creativity Box,78,4.0,99.0,8
+10708,Green Creativity Box,66,4.0,99.0,8
+10707,Red Creativity Box,55,4.0,99.0,8
+10709,Orange Creativity Box,60,4.0,99.0,8
+630,Brick Separator,1,4.0,99.0,8
+10694,LEGO® Creative Supplement Bright,303,4.0,99.0,8
+10699,Sand Baseplate,1,4.0,99.0,8
+31069,Modular Family Villa,728,8.0,12.0,9
+31070,Turbo Track Racer,670,9.0,12.0,9
+31081,Modular Skate House,422,8.0,12.0,9
+31079,Sunshine Surfer Van,379,8.0,12.0,9
+31080,Modular Winter Vacation,374,7.0,12.0,9
+31066,Space Shuttle Explorer,285,7.0,12.0,9
+31068,Modular Modern Home,386,8.0,12.0,9
+31067,Modular Poolside Holiday,356,7.0,12.0,9
+31062,Robo Explorer,205,7.0,12.0,9
+31074,Rocket Rally Car,241,7.0,12.0,9
+31076,Daredevil Stunt Plane,200,7.0,12.0,9
+31075,Outback Adventures,225,7.0,12.0,9
+31058,Mighty Dinosaurs,174,7.0,12.0,9
+31073,Mythical Creatures,223,7.0,12.0,9
+31056,Green Cruiser,122,6.0,12.0,9
+31057,Air Blazer,102,6.0,12.0,9
+31071,Drone Explorer,109,6.0,12.0,9
+31072,Extreme Engines,109,6.0,12.0,9
+31046,Fast Car,222,7.0,12.0,9
+31059,Sunset Street Bike,194,8.0,12.0,9
+31051,Lighthouse Point,528,8.0,12.0,9
+31064,Island Adventures,359,7.0,12.0,9
+31035,Beach Hut,286,7.0,12.0,9
+31063,Beachside Vacation,275,7.0,12.0,9
+31049,Twin Spin Helicopter,326,8.0,12.0,9
+31047,Propeller Plane,230,7.0,12.0,9
+31060,Airshow Aces,246,7.0,12.0,9
+31043,Chopper Transporter,124,6.0,12.0,9
+31029,Cargo Heli,132,6.0,12.0,9
+10256,Taj Mahal,5923,16.0,99.0,10
+10260,Downtown Diner,2480,16.0,99.0,10
+10259,Winter Village Station,902,12.0,99.0,10
+10255,Assembly Square,4002,16.0,99.0,10
+10253,Big Ben,4163,16.0,99.0,10
+10214,Tower Bridge,4295,16.0,99.0,10
+10257,Carousel,2670,16.0,99.0,10
+10247,Ferris Wheel,2464,16.0,99.0,10
+10251,Brick Bank,2382,16.0,99.0,10
+10243,Parisian Restaurant,2469,16.0,99.0,10
+10246,Detective’s Office,2262,16.0,99.0,10
+10258,London Bus,1686,16.0,99.0,10
+10220,Volkswagen T1 Camper Van,1334,16.0,99.0,10
+10252,Volkswagen Beetle,1167,16.0,99.0,10
+10242,MINI Cooper,1077,16.0,99.0,10
+10254,Winter Holiday Train,734,12.0,99.0,10
+70922,The Joker™ Manor,3444,14.0,99.0,38
+76087,Flying Fox: Batmobile Airlift Attack,955,9.0,14.0,11
+71171,LEGO® DIMENSIONS™ PLAYSTATION® 4 Starter Pack,267,7.0,14.0,13
+70923,The Bat-Space Shuttle,643,8.0,14.0,38
+76086,Knightcrawler Tunnel Attack,622,7.0,14.0,11
+70921,Harley Quinn™ Cannonball Attack,425,7.0,14.0,38
+76097,Lex Luthor™ Mech Takedown,406,7.0,14.0,11
+76098,Speed Force Freeze Pursuit,271,6.0,12.0,11
+70919,The Justice League™ Anniversary Party,267,7.0,14.0,38
+70920,Egghead™ Mech Food Fight,293,7.0,14.0,38
+10753,The Joker™ Batcave Attack,151,4.0,7.0,22
+70918,The Bat-Dune Buggy,198,7.0,14.0,38
+76085,Battle of Atlantis,197,6.0,12.0,11
+76096,Superman™ & Krypto™ Team-Up,199,6.0,12.0,11
+41232,Super Hero High School,712,8.0,12.0,12
+41230,Batgirl™ Batjet Chase,206,7.0,12.0,12
+41231,Harley Quinn™ to the rescue,217,7.0,12.0,12
+41233,Lashina™ Tank,145,7.0,12.0,12
+76052,Batman™ Classic TV Series – Batcave,2526,14.0,99.0,11
+41239,Eclipso™ Dark Palace,1078,9.0,12.0,12
+76055,Batman™: Killer Croc™ Sewer Smash,759,8.0,14.0,11
+76054,Batman™: Scarecrow™ Harvest of Fear,563,7.0,14.0,11
+41238,Lena Luthor™ Kryptomite™ Factory,432,7.0,12.0,12
+41237,Batgirl™ Secret Bunker,351,7.0,12.0,12
+76045,Kryptonite Interception,306,7.0,14.0,11
+76075,Wonder Woman™ Warrior Battle,286,6.0,12.0,11
+76056,Batman™: Rescue from Ra's al Ghul™,257,6.0,12.0,11
+76025,Green Lantern vs. Sinestro,174,6.0,12.0,11
+41234,Bumblebee™ Helicopter,142,7.0,12.0,12
+76044,Clash of the Heroes,91,6.0,12.0,11
+76068,Mighty Micros: Superman™ vs. Bizarro™,93,5.0,12.0,11
+76069,Mighty Micros: Batman™ vs. Killer Moth™,83,5.0,12.0,11
+76070,Mighty Micros: Wonder Woman™ vs. Doomsday™,85,5.0,12.0,11
+71287,Teen Titans Go!™ Fun Pack,56,7.0,14.0,13
+71343,The Powerpuff Girls™ Fun Pack,56,7.0,14.0,13
+71346,The Powerpuff Girls™ Team Pack,93,7.0,14.0,13
+71349,Beetlejuice™ Fun Pack,56,7.0,14.0,13
+71255,Teen Titans Go!™ Team Pack,105,7.0,14.0,13
+71242,Ghostbusters™ Story Pack,259,7.0,14.0,13
+71264,THE LEGO® BATMAN MOVIE Story Pack,156,7.0,14.0,13
+71267,Goonies™ Level Pack,118,7.0,14.0,13
+71248,Mission: Impossible™ Level Pack,76,7.0,14.0,13
+71229,DC Comics™ Team Pack,92,7.0,14.0,13
+71235,Midway Arcade™ Level Pack,96,7.0,14.0,13
+71348,Harry Potter™ Fun Pack,64,7.0,14.0,13
+71266,LEGO® City Fun Pack,46,7.0,14.0,13
+71238,Cyberman™ Fun Pack,40,7.0,14.0,13
+71218,LEGO® DIMENSIONS™ Gollum Fun Pack,39,7.0,14.0,13
+71232,LEGO® DIMENSIONS™ Eris Fun Pack,59,7.0,14.0,13
+71040,The Disney Castle,4080,16.0,99.0,16
+71042,Silent Mary,2294,14.0,99.0,16
+41148,Elsa's Magical Ice Palace,701,6.0,12.0,16
+41154,Cinderella's Dream Castle,585,6.0,12.0,16
+41153,Ariel's Royal Celebration Boat,380,6.0,12.0,16
+41150,Moana’s Ocean Voyage,307,6.0,12.0,16
+41152,Sleeping Beauty's Fairytale Castle,322,6.0,12.0,16
+41146,Cinderella's Enchanted Evening,350,6.0,12.0,16
+10744,Thunder Hollow Crazy 8 Race,191,4.0,7.0,22
+41145,Ariel and the Magical Spell,222,5.0,12.0,16
+10736,Anna & Elsa's Frozen Playground,94,4.0,7.0,22
+10743,Smokey's Garage,116,4.0,7.0,22
+10742,Willy's Butte Speed Training,95,4.0,7.0,22
+41155,Elsa's Market Adventure,125,5.0,12.0,16
+41151,Mulan's Training Day,104,5.0,12.0,16
+10730,Lightning McQueen Speed Launcher,47,4.0,7.0,22
+10733,Mater's Junkyard,62,4.0,7.0,22
+40307,Castle Interior Kit,115,6.0,99.0,16
+40388,Mini-Doll Dress-Up Kit,80,6.0,99.0,16
+10732,Guido and Luigi's Pit Stop,75,4.0,7.0,22
+10731,Cruz Ramirez Race Simulator,59,4.0,7.0,22
+41066,Anna & Kristoff’s Sleigh Adventure,174,5.0,12.0,16
+41149,Moana’s Island Adventure,205,5.0,12.0,16
+41142,Palace Pets Royal Castle,186,5.0,12.0,16
+41147,Anna's Snow Adventure,153,5.0,12.0,16
+41144,Petite's Royal Stable,75,5.0,12.0,16
+41143,Berry's Kitchen,61,5.0,12.0,16
+10880,T. rex Tower,22,2.0,5.0,14
+10879,Gentle Giants Petting Zoo,24,2.0,5.0,14
+10508,Deluxe Train Set,134,2.0,5.0,14
+10805,Around the World,163,2.0,5.0,14
+10840,Big Fair,106,2.0,5.0,14
+10869,Farm Adventures,104,2.0,5.0,14
+10836,Town Square,98,2.0,5.0,14
+10813,Big Construction Site,67,2.0,5.0,14
+10864,Large Playground Brick Box,71,2.0,5.0,14
+10507,My First Train Set,52,2.0,5.0,14
+10835,Family House,69,2.0,5.0,14
+10844,Minnie Mouse Bow-tique,70,2.0,5.0,14
+10841,Fun Family Fair,61,2.0,5.0,14
+10846,Flo's Café,28,2.0,5.0,14
+10827,Mickey & Friends Beach House,48,2.0,5.0,14
+10834,Pizzeria,57,2.0,5.0,14
+10823,Batwing Adventure,28,2.0,5.0,14
+10857,Piston Cup Race,31,2.0,5.0,14
+10837,Santa's Winter Holiday,45,2.0,5.0,14
+10876,Spider-Man & Hulk Adventures,38,2.0,5.0,14
+10863,My First Animal Brick Box,34,1.5,3.0,14
+10878,Rapunzel´s Tower,37,2.0,5.0,14
+10868,Farm Pony Stable,59,2.0,5.0,14
+10865,Fun Creations,70,1.5,5.0,14
+10572,LEGO® DUPLO® All-in-One-Box-of-Fun,65,1.5,5.0,14
+10592,Fire Truck,26,2.0,5.0,14
+10597,Mickey & Minnie Birthday Parade,24,2.0,5.0,14
+10839,Shooting Gallery,32,2.0,5.0,14
+10845,My First Carousel,24,1.5,3.0,14
+10871,Airport,29,2.0,5.0,14
+10833,Preschool,39,2.0,5.0,14
+10847,Number Train,23,1.5,3.0,14
+10816,My First Cars and Trucks,36,1.5,5.0,14
+10812,Truck & Tracked Excavator,26,2.0,5.0,14
+10856,Mater´s Shed,23,2.0,5.0,14
+10867,Farmers' Market,26,2.0,5.0,14
+10877,Belle´s Tea Party,19,2.0,5.0,14
+10861,My First Emotions,28,1.5,3.0,14
+10843,Mickey Racer,15,2.0,5.0,14
+10832,Birthday Picnic,19,2.0,5.0,14
+10809,Police Patrol,15,2.0,5.0,14
+10862,My First Celebration,41,1.5,3.0,14
+2304,LEGO® DUPLO® Green Baseplate,1,1.5,5.0,14
+10838,Family Pets,15,2.0,5.0,14
+10870,Farm Animals,16,2.0,5.0,14
+10858,My First Puzzle Pets,18,1.5,3.0,14
+10851,My First Bus,6,1.5,3.0,14
+10859,My First Ladybug,6,1.5,3.0,14
+10860,My First Race Car,6,1.5,3.0,14
+10608,Spider-Man Spider Truck Adventure,28,2.0,5.0,14
+10607,Spider-Man Web-Bike Workshop,13,2.0,5.0,14
+10820,LEGO® DUPLO® Creative Building Basket,110,2.0,5.0,14
+10804,Jungle,86,2.0,5.0,14
+10855,Cinderella´s Magical Castle,56,2.0,5.0,14
+10606,Doc McStuffins™ Backyard Clinic,39,2.0,5.0,14
+10822,Sofia the First Magical Carriage,30,2.0,5.0,14
+10817,LEGO® DUPLO® Creative Chest,70,1.5,5.0,14
+10828,Doc McStuffins´ Pet Vet Care,30,2.0,5.0,14
+10590,Airport,29,2.0,5.0,14
+10616,My First Playhouse,25,1.5,5.0,14
+10818,My First Truck,29,1.5,5.0,14
+10615,My First Tractor,12,1.5,5.0,14
+10801,Baby Animals,13,2.0,5.0,14
+10808,Little Plane,13,2.0,5.0,14
+10831,My First Caterpillar,19,1.5,5.0,14
+10849,My First Plane,10,1.5,3.0,14
+10852,My First Bird,7,1.5,3.0,14
+10850,My First Cakes,8,1.5,3.0,14
+41188,Breakout from the Goblin King's Fortress,695,8.0,12.0,17
+41194,Noctura's Tower & the Earth Fox Rescue,646,9.0,12.0,17
+41187,Rosalyn's Healing Hideout,460,8.0,12.0,17
+41193,Aira & the Song of the Wind Dragon,451,8.0,12.0,17
+41183,The Goblin King's Evil Dragon,339,8.0,12.0,17
+41192,Azari & the Fire Lion Capture,360,8.0,12.0,17
+41191,Naida & the Water Turtle Ambush,205,7.0,12.0,17
+41186,Azari & the Goblin Forest Escape,145,7.0,12.0,17
+41190,Emily Jones & the Eagle Getaway,149,7.0,12.0,17
+41185,Magic Rescue from the Goblin Village,637,7.0,12.0,17
+41181,Naida's Gondola & the Goblin Thief,67,7.0,12.0,17
+41182,The Capture of Sophie Jones,226,7.0,12.0,17
+41318,Heartlake Hospital,871,7.0,12.0,18
+41314,Stephanie's House,622,6.0,12.0,18
+41317,Sunshine Catamaran,603,7.0,12.0,18
+41340,Friendship House,722,6.0,12.0,18
+41324,Snow Resort Ski Lift,585,8.0,12.0,18
+41339,Mia's Camper Van,488,7.0,12.0,18
+41313,Heartlake Summer Pool,589,6.0,12.0,18
+41338,Stephanie's Sports Arena,460,6.0,12.0,18
+41320,Heartlake Frozen Yogurt Shop,370,6.0,12.0,18
+41323,Snow Resort Chalet,402,7.0,12.0,18
+41325,Heartlake City Playground,326,6.0,12.0,18
+41336,Emma's Art Café,378,6.0,12.0,18
+41335,Mia's Tree House,351,6.0,12.0,18
+41322,Snow Resort Ice Rink,307,6.0,12.0,18
+41316,Andrea's Speedboat Transporter,309,6.0,12.0,18
+41311,Heartlake Pizzeria,289,6.0,12.0,18
+41319,Snow Resort Hot Chocolate Van,246,6.0,12.0,18
+41334,Andrea's Park Performance,229,6.0,12.0,18
+41333,Olivia's Mission Vehicle,223,6.0,12.0,18
+41332,Emma's Art Stand,210,6.0,12.0,18
+10749,Mia's Organic Food Market,115,4.0,7.0,22
+41315,Heartlake Surf Shop,186,6.0,12.0,18
+41330,Stephanie's Soccer Practice,119,6.0,12.0,18
+41329,Olivia's Deluxe Bedroom,163,6.0,12.0,18
+10748,Emma's Pet Party,67,4.0,7.0,22
+41328,Stephanie's Bedroom,95,6.0,12.0,18
+41327,Mia's Bedroom,86,6.0,12.0,18
+40171,LEGO® Friends Buildable Hedgehog Storage,249,6.0,99.0,18
+41124,Heartlake Puppy Daycare,286,6.0,12.0,18
+41132,Heartlake Party Shop,176,6.0,12.0,18
+41128,Amusement Park Space Ride,195,6.0,12.0,18
+41303,Puppy Playground,62,5.0,12.0,18
+41130,Amusement Park Roller Coaster,1124,8.0,12.0,18
+41134,Heartlake Performance School,774,7.0,12.0,18
+41126,Heartlake Riding Club,575,6.0,12.0,18
+41312,Heartlake Sports Center,328,6.0,12.0,18
+41326,LEGO® Friends Advent Calendar,217,5.0,12.0,18
+41300,Puppy Championship,185,5.0,12.0,18
+41310,Heartlake Gift Delivery,185,6.0,12.0,18
+41301,Puppy Parade,145,5.0,12.0,18
+41127,Amusement Park Arcade,174,6.0,12.0,18
+41306,Mia's Beach Scooter,79,5.0,12.0,18
+41309,Andrea's Musical Duet,86,5.0,12.0,18
+41123,Foal's Washing Station,77,5.0,12.0,18
+41302,Puppy Pampering,45,5.0,12.0,18
+75827,Firehouse Headquarters,4634,16.0,99.0,19
+75828,Ecto-1 & 2,556,8.0,14.0,19
+21313,Ship in a Bottle,962,12.0,99.0,20
+21314,TRON: Legacy,230,10.0,99.0,20
+21310,Old Fishing Store,2049,12.0,99.0,20
+21309,LEGO® NASA Apollo Saturn V,1969,14.0,99.0,20
+21308,Adventure Time™,496,9.0,99.0,20
+21312,Women of NASA,231,10.0,99.0,20
+21307,Caterham Seven 620R,773,12.0,99.0,20
+10758,T. rex Breakout,150,4.0,7.0,22
+10761,The Great Home Escape,178,4.0,7.0,22
+10757,Raptor Rescue Truck,85,4.0,7.0,22
+10760,Underminer Bank Heist,149,4.0,7.0,22
+10756,Pteranodon Escape,84,4.0,7.0,22
+10759,Elastigirl's Rooftop Pursuit,95,4.0,7.0,22
+10745,Florida 500 Final Race,266,5.0,8.0,22
+10734,Demolition Site,175,4.0,7.0,22
+10746,Mia's Farm Suitcase,100,4.0,7.0,22
+10754,Spider-Man vs. Scorpion Street Showdown,125,4.0,7.0,22
+10739,Shark Attack,108,4.0,7.0,22
+10740,Fire Patrol Suitcase,110,4.0,7.0,22
+10755,Zane's Ninja Boat Pursuit,131,4.0,7.0,22
+10738,Snow White's Forest Cottage,67,4.0,7.0,22
+10737,Batman™ vs. Mr. Freeze™,63,4.0,7.0,22
+10747,Andrea & Stephanie's Beach Holiday,143,4.0,7.0,22
+10687,Spider-Man™ Hideout,137,4.0,7.0,22
+10725,Lost Temple,172,4.0,7.0,22
+10735,Police Truck Chase,90,4.0,7.0,22
+10722,Snake Showdown,92,4.0,7.0,22
+10726,Stephanie's Horse Carriage,58,4.0,7.0,22
+10723,Ariel’s Dolphin Carriage,70,4.0,7.0,22
+10720,Police Helicopter Chase,63,4.0,7.0,22
+75930,Indoraptor Rampage at Lockwood Estate,1019,8.0,12.0,21
+75929,Carnotaurus Gyrosphere Escape,577,7.0,12.0,6
+75933,T. rex Transport,609,7.0,12.0,37
+75932,Jurassic Park Velociraptor Chase,360,6.0,12.0,23
+75931,Dilophosaurus Outpost Attack,289,7.0,12.0,15
+75928,Blue's Helicopter Pursuit,397,7.0,12.0,4
+75927,Stygimoloch Breakout,222,6.0,12.0,36
+75926,Pteranodon Chase,126,6.0,12.0,32
+76105,The Hulkbuster: Ultron Edition,1363,14.0,99.0,26
+76108,Sanctum Sanctorum Showdown,1004,8.0,14.0,26
+76107,Thanos: Ultimate Battle,674,8.0,14.0,26
+76103,Corvus Glaive Thresher Attack,416,7.0,14.0,26
+76104,The Hulkbuster Smash-Up,375,7.0,14.0,26
+76102,Thor's Weapon Quest,223,6.0,12.0,26
+76101,Outrider Dropship Attack,124,6.0,12.0,26
+76088,Thor vs. Hulk: Arena Clash,492,7.0,14.0,26
+76078,Hulk vs. Red Hulk,375,7.0,14.0,26
+76084,The Ultimate Battle for Asgard,400,7.0,14.0,26
+76083,Beware the Vulture,375,7.0,14.0,26
+76100,Royal Talon Fighter Attack,358,7.0,14.0,26
+76077,Iron Man: Detroit Steel Strikes,377,7.0,14.0,26
+76099,Rhino Face-Off by the Mine,229,6.0,12.0,26
+76082,ATM Heist Battle,185,6.0,12.0,26
+76076,Captain America Jet Pursuit,160,6.0,12.0,26
+76091,Mighty Micros: Thor vs. Loki,79,5.0,12.0,26
+76090,Mighty Micros: Star-Lord vs. Nebula,86,5.0,12.0,26
+76089,Mighty Micros: Scarlet Spider vs. Sandman,89,5.0,12.0,26
+76071,Mighty Micros: Spider-Man vs. Scorpion,79,5.0,12.0,26
+76080,Ayesha's Revenge,323,7.0,14.0,26
+76067,Tanker Truck Takedown,330,6.0,12.0,26
+76060,Doctor Strange's Sanctum Sanctorum,358,7.0,14.0,26
+76079,Ravager Attack,197,6.0,12.0,26
+76029,Iron Man vs. Ultron,92,6.0,12.0,26
+76072,Mighty Micros: Iron Man vs. Thanos,94,5.0,12.0,26
+76073,Mighty Micros: Wolverine vs. Magneto,85,5.0,12.0,26
+31313,LEGO® MINDSTORMS® EV3,601,10.0,99.0,25
+45500,EV3 Intelligent Brick,1,10.0,21.0,25
+45501,EV3 Rechargeable DC Battery,1,10.0,21.0,25
+45506,EV3 Color Sensor,1,10.0,21.0,25
+45505,EV3 Gyro Sensor,1,10.0,21.0,25
+45509,EV3 Infrared Sensor,1,10.0,21.0,25
+45508,EV3 Infrared Beacon,1,10.0,99.0,25
+45517,Transformer 10V DC,1,8.0,99.0,25
+45502,EV3 Large Servo Motor,1,10.0,21.0,25
+45503,EV3 Medium Servo Motor,1,10.0,21.0,25
+45507,EV3 Touch Sensor,1,10.0,21.0,25
+45514,EV3 Cable Pack,7,10.0,21.0,25
+45504,EV3 Ultrasonic Sensor,1,10.0,99.0,25
+21137,The Mountain Cave,2863,12.0,99.0,27
+21136,The Ocean Monument,1122,8.0,99.0,27
+21134,The Waterfall Base,729,8.0,99.0,27
+21135,The Crafting Box 2.0,717,8.0,99.0,27
+21144,The Farm Cottage,549,8.0,99.0,27
+21143,The Nether Portal,470,8.0,99.0,27
+21142,The Polar Igloo,278,8.0,99.0,27
+21130,The Nether Railway,387,8.0,99.0,27
+21140,The Chicken Coop,198,7.0,14.0,27
+21141,The Zombie Cave,241,7.0,14.0,27
+21123,The Iron Golem,208,8.0,99.0,27
+21129,The Mushroom Island,247,8.0,99.0,27
+21139,The Nether Fight,84,6.0,14.0,27
+21138,The Melon Farm,69,6.0,14.0,27
+21122,The Nether Fortress,571,8.0,99.0,27
+21125,The Jungle Tree House,706,8.0,99.0,27
+21124,The End Portal,559,8.0,99.0,27
+21121,The Desert Outpost,519,8.0,99.0,27
+21126,The Wither,318,8.0,99.0,27
+21119,The Dungeon,219,8.0,99.0,27
+71021,Series 18: Party,7,5.0,99.0,28
+71020,THE LEGO® BATMAN MOVIE Series 2,8,5.0,99.0,28
+71019,THE LEGO® NINJAGO® MOVIE™,8,5.0,99.0,28
+71018,Series 17,7,5.0,99.0,28
+70357,Knighton Castle,1426,9.0,14.0,29
+72006,Axl's Rolling Arsenal,604,8.0,14.0,29
+72005,Aaron's X-bow,569,8.0,14.0,29
+72004,Tech Wizard Showdown,506,8.0,14.0,29
+72003,Berserker Bomber,369,8.0,14.0,29
+72002,Twinfector,191,7.0,14.0,29
+72001,Lance's Hover Jouster,217,7.0,14.0,29
+70358,Aaron's Stone Destroyer,251,8.0,14.0,29
+70365,Battle Suit Axl,88,7.0,14.0,29
+70347,King's Guard Artillery,98,7.0,14.0,29
+70317,The Fortrex,1140,9.0,14.0,29
+70352,Jestro's Headquarters,840,9.0,14.0,29
+70322,Axl's Tower Carrier,670,8.0,14.0,29
+70355,Aaron's Rock Climber,598,8.0,14.0,29
+70354,Axl's Rumble Maker,393,8.0,14.0,29
+70321,General Magmar's Siege Machine of Doom,516,8.0,14.0,29
+70359,Lance vs. lightning,257,8.0,14.0,29
+70350,The Three Brothers,266,8.0,14.0,29
+70349,Ruina's Lock & Roller,208,8.0,14.0,29
+70348,Lance's Twin Jouster,216,8.0,14.0,29
+70313,Moltor’s Lava Smasher,187,8.0,14.0,29
+70361,Macy's Bot Drop Dragon,153,7.0,14.0,29
+70362,Battle Suit Clay,79,7.0,14.0,29
+70366,Battle Suit Lance,83,7.0,14.0,29
+70364,Battle Suit Aaron,80,7.0,14.0,29
+70339,Ultimate Flama,67,7.0,14.0,29
+70337,Ultimate Lance,75,7.0,14.0,29
+70363,Battle Suit Macy,66,7.0,14.0,29
+70336,Ultimate Axl,69,8.0,14.0,29
+70338,Ultimate General Magmar,64,7.0,14.0,29
+853516,LEGO® NEXO KNIGHTS™ Monsters Army-Building Set,30,6.0,99.0,29
+70372,Combo NEXO Powers Wave 1,10,7.0,14.0,29
+70618,Destiny's Bounty,2295,9.0,14.0,39
+70620,NINJAGO® City,4867,16.0,99.0,39
+70617,Temple of The Ultimate Ultimate Weapon,1403,9.0,14.0,39
+70632,Quake Mech,1202,9.0,14.0,39
+70656,"garmadon, Garmadon, GARMADON!",830,9.0,14.0,39
+70616,Ice Tank,914,9.0,14.0,39
+70643,Temple of Resurrection,765,8.0,14.0,30
+70615,Fire Mech,944,9.0,14.0,39
+70613,Garma Mecha Man,747,8.0,14.0,39
+70614,Lightning Jet,876,9.0,14.0,39
+70642,Killow vs. Samurai X,556,8.0,14.0,30
+70631,Garmadon's Volcano Lair,521,8.0,14.0,39
+70612,Green Ninja Mech Dragon,544,8.0,14.0,39
+70640,S.O.G. Headquarters,530,8.0,14.0,30
+70641,Ninja Nightcrawler,552,9.0,14.0,30
+70639,Street Race of Snake Jaguar,308,7.0,14.0,30
+70611,Water Strider,494,8.0,14.0,39
+70608,Master Falls,312,7.0,14.0,39
+70609,Manta Ray Bomber,341,7.0,14.0,39
+70610,Flying Jelly Sub,341,8.0,14.0,39
+70638,Katana V11,257,7.0,14.0,30
+70629,Piranha Attack,217,7.0,14.0,39
+70607,NINJAGO® City Chase,233,7.0,14.0,39
+70628,Lloyd - Spinjitzu Master,48,6.0,14.0,39
+70633,Kai - Spinjitzu Master,61,6.0,14.0,30
+70635,Jay - Spinjitzu Master,68,6.0,14.0,30
+70637,Cole - Spinjitzu Master,73,6.0,14.0,30
+70606,Spinjitzu Training,109,6.0,14.0,39
+70634,Nya - Spinjitzu Master,69,6.0,14.0,30
+70636,Zane - Spinjitzu Master,69,6.0,14.0,30
+70605,Misfortune’s Keep,754,9.0,14.0,30
+70592,Salvage M.E.C.,439,8.0,14.0,30
+70624,Vermillion Invader,313,8.0,14.0,30
+70623,Destiny's Shadow,360,7.0,14.0,30
+70603,Raid Zeppelin,294,7.0,14.0,30
+70601,Sky Shark,221,7.0,14.0,30
+70621,The Vermillion Attack,83,6.0,14.0,30
+2000431,Connections Kit,2455,6.0,99.0,33
+2000409,Window Exploration Bag,4900,6.0,99.0,33
+2000414,Starter Kit,219,6.0,99.0,33
+2000430,Identity and Landscape Kit,2631,6.0,99.0,33
+75889,Ferrari Ultimate Garage,841,8.0,14.0,34
+75888,Porsche 911 RSR and 911 Turbo 3.0,391,7.0,14.0,34
+75884,1968 Ford Mustang Fastback,183,7.0,14.0,34
+75886,Ferrari 488 GT3 “Scuderia Corsa”,179,7.0,14.0,34
+75885,Ford Fiesta M-Sport WRC,203,7.0,14.0,34
+75883,MERCEDES AMG PETRONAS Formula One™ Team,941,8.0,14.0,34
+75881,2016 Ford GT & 1966 Ford GT40,366,7.0,14.0,34
+75887,Porsche 919 Hybrid,163,7.0,14.0,34
+75877,Mercedes-AMG GT3,196,7.0,14.0,34
+75880,McLaren 720S,161,7.0,14.0,34
+75879,Scuderia Ferrari SF16-H,184,7.0,14.0,34
+75878,Bugatti Chiron,181,7.0,14.0,34
+75871,Ford Mustang GT,185,7.0,14.0,34
+75872,Audi R18 e-tron quattro,166,7.0,14.0,34
+75212,Kessel Run Millennium Falcon™,1413,9.0,14.0,35
+75211,Imperial TIE Fighter™,519,9.0,14.0,35
+75210,Moloch's Landspeeder™,464,8.0,12.0,35
+75208,Yoda's Hut,229,7.0,12.0,35
+75209,Han Solo's Landspeeder™,345,7.0,12.0,35
+75537,Darth Maul™,104,8.0,14.0,35
+75536,Range Trooper™,101,7.0,14.0,35
+75535,Han Solo™,101,8.0,14.0,35
+75206,Jedi™ and Clone Troopers™ Battle Pack,102,6.0,12.0,35
+75207,Imperial Patrol Battle Pack,99,6.0,12.0,35
+75159,Death Star™,4016,14.0,99.0,35
+75060,Slave I,1996,14.0,99.0,35
+75190,First Order Star Destroyer™,1416,9.0,14.0,35
+75189,First Order Heavy Assault Walker™,1376,9.0,14.0,35
+75188,Resistance Bomber,780,9.0,14.0,35
+75187,BB-8™,1106,10.0,16.0,35
+75156,Krennic's Imperial Shuttle,863,9.0,14.0,35
+75186,The Arrowhead,775,8.0,14.0,35
+75202,Defense of Crait™,746,9.0,14.0,35
+75179,Kylo Ren's TIE Fighter™,630,8.0,14.0,35
+75102,Poe's X-Wing Fighter™,717,8.0,14.0,35
+75155,Rebel U-Wing Fighter™,659,8.0,14.0,35
+75180,Rathtar™ Escape,836,8.0,14.0,35
+75185,Tracker I,557,8.0,14.0,35
+75172,Y-Wing Starfighter™,691,8.0,14.0,35
+75532,Scout Trooper™ & Speeder Bike™,452,10.0,14.0,35
+75178,Jakku Quadjumper™,457,8.0,14.0,35
+75177,First Order Heavy Scout Walker™,554,9.0,14.0,35
+75205,Mos Eisley Cantina™,376,8.0,14.0,35
+75201,First Order AT-ST™,370,8.0,14.0,35
+75530,Chewbacca™,179,8.0,14.0,35
+75200,Ahch-To Island™ Training,241,7.0,12.0,35
+75204,Sandspeeder™,278,7.0,12.0,35
+75174,Desert Skiff Escape,277,7.0,12.0,35
+75199,General Grievous' Combat Speeder,157,7.0,12.0,35
+75176,Resistance Transport Pod™,294,8.0,14.0,35
+75183,Darth Vader™ Transformation,282,7.0,12.0,35
+75168,Yoda's Jedi Starfighter™,262,8.0,12.0,35
+75182,Republic Fighter Tank™,305,8.0,14.0,35
+75169,Duel on Naboo™,208,7.0,12.0,35
+75529,Elite Praetorian Guard,92,8.0,14.0,35
+75117,Kylo Ren™,86,8.0,14.0,35
+75531,Stormtrooper™ Commander,100,7.0,14.0,35
+75528,Rey,85,8.0,14.0,35
+75196,A-Wing™ vs. TIE Silencer™ Microfighters,188,6.0,12.0,35
+75195,Ski Speeder™ vs. First Order Walker™ Microfighters,216,6.0,12.0,35
+75526,Elite TIE Fighter Pilot™,94,8.0,14.0,35
+75198,Tatooine™ Battle Pack,97,6.0,12.0,35
+75197,First Order Specialists Battle Pack,108,6.0,12.0,35
+75167,Bounty Hunter Speeder Bike™ Battle Pack,125,6.0,12.0,35
+75166,First Order Transport Speeder Battle Pack,117,6.0,12.0,35
+75193,Millennium Falcon™ Microfighter,92,6.0,12.0,35
+75194,First Order TIE Fighter™ Microfighter,91,6.0,12.0,35
+75160,U-Wing™ Microfighter,109,6.0,12.0,35
+75161,TIE Striker™ Microfighter,88,6.0,12.0,35
+75144,Snowspeeder™,1703,14.0,99.0,35
+75191,Jedi Starfighter™ With Hyperdrive,825,9.0,14.0,35
+75534,Darth Vader™,168,9.0,14.0,35
+75533,Boba Fett™,144,8.0,14.0,35
+75173,Luke's Landspeeder™,149,7.0,12.0,35
+75181,Y-Wing Starfighter™,1966,14.0,99.0,35
+75192,Millennium Falcon™,7541,16.0,99.0,35
+75119,Sergeant Jyn Erso™,104,7.0,14.0,35
+75524,Chirrut Îmwe™,87,8.0,14.0,35
+75525,Baze Malbus™,148,9.0,14.0,35
+75165,Imperial Trooper Battle Pack,112,6.0,12.0,35
+75095,TIE Fighter™,1685,14.0,99.0,35
+75104,Kylo Ren’s Command Shuttle™,1005,9.0,14.0,35
+75154,TIE Striker™,543,8.0,14.0,35
+75139,Battle on Takodana™,409,8.0,14.0,35
+75171,Battle on Scarif,419,8.0,14.0,35
+75147,StarScavenger™,558,8.0,14.0,35
+75148,Encounter on Jakku™,530,8.0,14.0,35
+75184,LEGO® Star Wars™ Advent Calendar,309,6.0,14.0,35
+75170,The Phantom,269,7.0,12.0,35
+75111,Darth Vader™,160,9.0,14.0,35
+75120,K-2SO™,169,9.0,14.0,35
+75118,Captain Phasma™,82,7.0,14.0,35
+75109,Obi-Wan Kenobi™,83,7.0,12.0,35
+75121,Imperial Death Trooper™,106,8.0,14.0,35
+75099,Rey's Speeder™,193,7.0,12.0,35
+75523,Scarif Stormtrooper™,89,7.0,14.0,35
+75116,Finn,98,8.0,14.0,35
+75107,Jango Fett™,85,7.0,12.0,35
+75114,First Order Stormtrooper™,81,7.0,14.0,35
+75164,Rebel Trooper Battle Pack,120,6.0,12.0,35
+75131,Resistance Trooper Battle Pack,112,6.0,12.0,35
+75132,First Order Battle Pack,88,6.0,12.0,35
+75162,Y-Wing™ Microfighter,90,6.0,12.0,35
+75125,Resistance X-Wing Fighter™,87,6.0,12.0,35
+75128,TIE Advanced Prototype™,93,6.0,12.0,35
+75163,Krennic's Imperial Shuttle™ Microfighter,78,6.0,12.0,35
+75126,First Order Snowspeeder™,91,6.0,12.0,35
+42070,6x6 All Terrain Tow Truck,1862,11.0,16.0,40
+42056,Porsche 911 GT3 RS,2704,16.0,99.0,40
+42055,Bucket Wheel Excavator,3929,12.0,16.0,40
+42078,Mack Anthem,2595,11.0,16.0,40
+42069,Extreme Adventure,2382,11.0,16.0,40
+42066,Air Race Jet,1151,10.0,16.0,40
+42064,Ocean Explorer,1327,10.0,16.0,40
+42077,Rally Car,1005,10.0,16.0,40
+42065,RC Tracked Racer,370,9.0,16.0,40
+42068,Airport Rescue Vehicle,1098,10.0,16.0,40
+42076,Hovercraft,1020,9.0,16.0,40
+42063,BMW R 1200 GS Adventure,603,10.0,16.0,40
+42062,Container Yard,631,8.0,14.0,40
+42075,First Responder,513,9.0,16.0,40
+42074,Racing Yacht,330,8.0,14.0,40
+42060,Roadwork Crew,365,8.0,14.0,40
+8293,LEGO® Power Functions Motor Set,10,9.0,16.0,31
+42072,WHACK!,135,7.0,14.0,40
+42059,Stunt Truck,142,7.0,14.0,40
+42073,BASH!,139,7.0,14.0,40
+42057,Ultralight Helicopter,199,8.0,14.0,40
+42058,Stunt Bike,140,7.0,14.0,40
+42071,Dozer Compactor,171,8.0,14.0,40
+42084,Hook Loader,176,7.0,14.0,40
+42054,CLAAS XERION 5000 TRAC VC,1977,11.0,16.0,40
+42052,Heavy Lift Helicopter,1043,10.0,16.0,40
+42039,24 Hours Race Car,1219,11.0,16.0,40
+42053,Volvo EW160E,1166,10.0,16.0,40
+42037,Formula Off-Roader,494,9.0,16.0,40
+42049,Mine Loader,476,9.0,16.0,40
+42036,Street Motorcycle,375,9.0,16.0,40
+42061,Telehandler,260,9.0,16.0,40
+42032,Compact Tracked Loader,252,8.0,14.0,40
+42033,Record Breaker,125,7.0,14.0,40
+42045,Hydroplane Racer,180,8.0,14.0,40
+42031,Cherry Picker,155,7.0,14.0,40
+42044,Display Team Jet,113,7.0,14.0,40
+70912,Arkham Asylum,1628,12.0,16.0,38
+70917,The Ultimate Batmobile,1456,10.0,16.0,38
+70909,Batcave Break-in,1047,8.0,14.0,38
+70916,The Batwing,1053,9.0,14.0,38
+70905,The Batmobile,581,8.0,14.0,38
+70906,The Joker™ Notorious Lowrider,433,8.0,14.0,38
+70914,Bane™ Toxic Truck Attack,366,8.0,14.0,38
+70911,The Penguin™ Arctic Roller,305,8.0,14.0,38
+70903,The Riddler™ Riddle Racer,254,7.0,14.0,38
+70910,Scarecrow™ Special Delivery,204,7.0,14.0,38
+70901,Mr. Freeze™ Ice Attack,201,7.0,14.0,38
+70913,Scarecrow™ Fearful Face-off,141,6.0,12.0,38
+70900,The Joker™ Balloon Escape,124,6.0,12.0,38
+853638,THE LEGO® BATMAN MOVIE Batman™ Minifigure Collector Frame,61,7.0,99.0,38
+70908,The Scuttler,775,9.0,14.0,38
+70907,Killer Croc™ Tail-Gator,460,8.0,14.0,38
+70915,Two-Face™ Double Demolition,564,9.0,14.0,38
+70904,Clayface™ Splat Attack,448,8.0,14.0,38
+70902,Catwoman™ Catcycle Chase,139,7.0,14.0,38
+10704,Creative Box,900,4.0,99.0,8
+10703,Creative Builder Box,502,4.0,99.0,8
+10715,Bricks on a Roll,442,4.0,99.0,8
+31052,Vacation Getaways,792,9.0,14.0,9
+10249,Winter Toy Shop,898,12.0,99.0,10
+71228,The Ghostbusters™ Level Pack,115,7.0,14.0,13
+71245,Adventure Time™ Level Pack,102,7.0,14.0,13
+71247,Harry Potter™ Team Pack,119,7.0,14.0,13
+71246,Adventure Time™ Team Pack,96,7.0,14.0,13
+71344,Excalibur Batman™ Fun Pack,57,7.0,14.0,13
+71251,A-Team™ Fun Pack,73,7.0,14.0,13
+71234,Sensei Wu Fun Pack,58,7.0,14.0,13
+71240,Bane™ Fun Pack,52,7.0,14.0,13
+71286,Knight Rider™ Fun Pack,55,7.0,14.0,13
+10854,LEGO® DUPLO® Creative Box,120,2.0,5.0,14
+10848,My First Bricks,80,1.5,3.0,14
+9843,Touch Sensor,1,8.0,99.0,25
+70751,Temple of Airjitzu,2028,14.0,99.0,30
+75175,A-Wing Starfighter™,358,8.0,14.0,35
+71217,Zane Fun Pack,45,7.0,14.0,13
+71203,Portal® 2 Level Pack,85,7.0,14.0,13
+71221,Wicked Witch™ Fun Pack,38,7.0,14.0,13

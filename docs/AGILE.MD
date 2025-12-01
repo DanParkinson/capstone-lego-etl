@@ -172,18 +172,53 @@
 
 ## (3) Data Loading and Storage
 
-### US6 — Save Cleaned Dataset to Processed CSV
-- As a developer, I want to save the cleaned data to a processed directory,
-- So that Streamlit and any other tools can load it reliably.
+### US6 — Create Relational Output Tables  
+- As a developer, I want to load the cleaned dataset into separate relational-style tables,
+- So that the data can be used efficiently by the application and follow a clear dimensional model.
 
-#### Acceptance Criteria
-- [ ] Cleaned CSV saved to `data/processed/lego_clean.csv`
-- [ ] Directories created automatically if missing
-- [ ] File overwrites safely with logging
-- [ ] Saved CSV matches the cleaned DataFrame structure
+#### Acceptance Criteria  
+Create the following output tables in `data/output/`:
 
-#### Tests
-- [ ] placeholder
+- **products**
+  - [x] Columns: `prod_id`, `set_name`, `piece_count`, `age_min`, `age_max`, `theme_id`
+  - [x] One row per product (`prod_id`)
+  - [x] Linked to themes via `theme_id`
+
+- **product_descriptions**
+  - [x] Columns: `prod_id`, `prod_desc`, `prod_long_desc`
+  - [x] One row per product
+  - [x] Stores large text fields separately to avoid duplication
+
+- **themes**
+  - [x] Columns: `theme_name`, `theme_id`
+  - [x] One row per unique theme
+  - [x] Surrogate key `theme_id` assigned in consistent order
+
+- **countries**
+  - [x] Columns: `country`, `country_name`, `country_id`
+  - [x] One row per unique country
+  - [x] Full country names mapped from country codes
+  - [x] Surrogate key `country_id` assigned
+
+- **review_difficulty**
+  - [x] Columns: `review_difficulty`, `review_difficulty_id`
+  - [x] Difficulty values ordered intentionally (unrated → very challenging)
+  - [x] Surrogate key preserved (not regenerated)
+
+- **product_listings** (Fact Table)
+  - [x] Columns:  
+        `prod_id`, `country`, `list_price`, `num_reviews`,  
+        `star_rating`, `val_star_rating`, `play_star_rating`, `review_difficulty`
+  - [x] One row per product per country
+  - [x] Composite key (`prod_id`, `country`)
+  - [x] Clean measures used from transform stage
+
+#### Tests  
+- [ ] src/load/write_table.py
+  - [x] test_write_table_selects_columns  
+  - [x] test_write_table_deduplicates  
+  - [x] test_write_table_adds_surrogate_key  
+
 
 ---
 
