@@ -1,7 +1,7 @@
-review_difficulty,review_difficulty_id
-unrated,1
-very easy,2
-easy,3
-average,4
-challenging,5
-very challenging,6
+review_difficulty_id,review_difficulty
+1,unrated
+2,very easy
+3,easy
+4,average
+5,challenging
+6,very challenging

@@ -11,10 +11,10 @@ def create_products_table(df: pd.DataFrame, themes_df: pd.DataFrame) -> pd.DataF
         columns=[
             "prod_id",
             "set_name",
+            "theme_id",
             "piece_count",
             "age_min",
             "age_max",
-            "theme_id",
         ],
         output_name="products.csv",
         deduplication_key="prod_id",
@@ -57,7 +57,7 @@ def create_reviews_table(df: pd.DataFrame) -> pd.DataFrame:
 
     return write_table(
         df=difficulty_df,
-        columns=["review_difficulty", "review_difficulty_id"],
+        columns=["review_difficulty_id", "review_difficulty"],
         output_name="reviews.csv",
         deduplication_key="review_difficulty",
         add_surrogate_id=None,
@@ -116,13 +116,13 @@ def create_product_listings_table(
         df=df_with_reviews_ids,
         columns=[
             "prod_id",
-            "country_id",
             "list_price",
             "num_reviews",
             "star_rating",
             "val_star_rating",
             "play_star_rating",
             "review_difficulty_id",
+            "country_id",
         ],
         output_name="product_listings.csv",
         deduplication_key=[
