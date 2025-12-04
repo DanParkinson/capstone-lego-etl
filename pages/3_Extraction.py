@@ -17,7 +17,7 @@ with col1:
     st.markdown(
         """
         <div class="card">
-        <h3>US1 — Fetch LEGO Dataset via Kaggle API</h3>
+        <h3>US1 — Fetch LEGO dataset via Kaggle API</h3>
 
         <p>
         As a developer, I want to fetch the LEGO dataset automatically from Kaggle 
@@ -71,10 +71,8 @@ with col1:
     <h3>Thought Process</h3>
 
     <ul>
-        <li>Make the pipeline <strong>fully automated</strong> — eliminate manual downloads</li>
-        <li>Ensure the ETL is <strong>reproducible</strong> on any machine</li>
+        <li>Eliminate manual downloads</li>
         <li>Skip the download step if the CSV already exists locally</li>
-        <li>Keep orchestration simple, with heavy work delegated to helper modules</li>
     </ul>
     </div>
     """,
@@ -91,7 +89,6 @@ with col1:
         <li>If missing → download via Kaggle API</li>
         <li>Rename the downloaded file to a predictable filename</li>
         <li>Load the CSV into a DataFrame using <code>extract_lego_data()</code></li>
-        <li>Return the DataFrame for the validation stage</li>
     </ul>
 
     <p>
@@ -134,7 +131,6 @@ def extract_data():
     )
 
 with col3:
-    # Top Card: Test Overview
     st.markdown(
         """
     <div class="flexi-card">
@@ -144,7 +140,6 @@ with col3:
         unsafe_allow_html=True,
     )
 
-    # Test Code Block
     st.code(
         """
 @patch("src.extract.extract.RAW_FILE")
@@ -182,7 +177,6 @@ with col1:
     <h3>Thought Process</h3>
 
     <ul>
-        <li>Ensure dataset is always available, even on a fresh machine</li>
         <li>Automate interaction with the Kaggle API</li>
         <li>Add error handling so failures are obvious and logged</li>
         <li>Return the path of the downloaded CSV for downstream functions</li>
@@ -296,9 +290,6 @@ st.markdown("## Extract LEGO Data — `extract_lego.py`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ==========================
-# COLUMN 1 — EXPLANATION
-# ==========================
 with col1:
     st.markdown(
         """
@@ -307,15 +298,8 @@ with col1:
 
     <ul>
         <li>Separate CSV reading into its own function for clarity and testing</li>
-        <li>Measure how long the extraction takes for observability</li>
-        <li>Add robust error handling around <code>pd.read_csv()</code></li>
         <li>Log extraction success with dataset shape and performance</li>
     </ul>
-
-    <p>
-    This function is deliberately small and focused — it should do 
-    <strong>only one job</strong>: load a CSV into a DataFrame safely.
-    </p>
     </div>
     """,
         unsafe_allow_html=True,
@@ -342,14 +326,10 @@ with col1:
         unsafe_allow_html=True,
     )
 
-# ==========================
-# COLUMN 2 — CODE BLOCK
-# ==========================
 with col2:
     st.code(
         """
 def extract_lego_data(file_path: Path) -> pd.DataFrame:
-    start = timeit.default_timer()
 
     try:
         df = pd.read_csv(file_path)
@@ -357,19 +337,11 @@ def extract_lego_data(file_path: Path) -> pd.DataFrame:
         logger.error(f"Failed to read CSV from {file_path}.")
         raise RuntimeError(f"Failed to read CSV file: {file_path}: {e}")
 
-    duration = timeit.default_timer() - start
-    log_extract_success(
-        logger, "LEGO Dataset", df.shape, duration, EXPECTED_PERFORMANCE
-    )
-
     return df
         """,
         language="python",
     )
 
-# ==========================
-# COLUMN 3 — TESTS
-# ==========================
 with col3:
     st.markdown(
         """

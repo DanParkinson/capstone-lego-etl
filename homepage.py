@@ -1,5 +1,4 @@
 import streamlit as st
-from src.run_etl import run
 
 st.set_page_config(page_title="LEGO Analytics", layout="wide")
 
@@ -7,7 +6,7 @@ st.set_page_config(page_title="LEGO Analytics", layout="wide")
 with open("styles.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.title("Welcome to the LEGO ETL Pipeline Presentation")
+st.title("Welcome to my LEGO ETL Pipeline Presentation")
 
 st.write(
     "This project demonstrates the full lifecycle of building a professional, "
@@ -15,10 +14,6 @@ st.write(
 )
 
 st.write("The goal was to design a clear, reliable system that included:")
-
-# if st.button("Run ETL Pipeline"):
-#     run()
-#     st.success("ETL completed!")
 
 col1, col2, col3 = st.columns([1, 1, 1])
 
@@ -29,7 +24,7 @@ with col1:
             <h3>1. A Robust ETL Pipeline</h3>
             <ul>
                 <li>Modular ETL structure</li>
-                <li>Full unit test coverage</li>
+                <li>Extensive unit test coverage</li>
                 <li>Logging and performance checks</li>
             </ul>
         </div>
@@ -77,13 +72,12 @@ with col3:
             <h3>Content Covered:</h3>
             <ul>
                 <li><strong>1. Choice of Data</strong></li>
-                <li><strong>2. Agile Development</strong></li>
-                <li><strong>3. Extraction</strong></li>
-                <li><strong>4. Transformation</strong></li>
-                <li><strong>5. Loading</strong></li>
-                <li><strong>6. Streamlit Integration</strong></li>
-                <li><strong>7. Challenges & Takeaways</strong></li>
-                <li><strong>8. Future Development</strong></li>
+                <li><strong>2. Extraction</strong></li>
+                <li><strong>3. Transformation</strong></li>
+                <li><strong>4. Loading</strong></li>
+                <li><strong>5. Streamlit Integration</strong></li>
+                <li><strong>6. Challenges & Takeaways</strong></li>
+                <li><strong>7. Future Development</strong></li>
             </ul>
         </div>
         """,

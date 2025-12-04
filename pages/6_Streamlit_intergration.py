@@ -14,18 +14,16 @@ st.subheader("Epic 4 — Streamlit Application")
 st.markdown(
     """
 <div class="card">
-<h3>US7 — Run ETL Automatically on Streamlit Startup</h3>
+<h3>US7 — Streamlit app loads datasets</h3>
 
 <p>
-    As a user, I want the ETL pipeline to run automatically when the Streamlit application starts,
-    so that the displayed data is always up-to-date and fully processed.
+    As a user, I want a streamlit application that presents data,
+    so that I can view analytical insights.
 </p>
 
 <p><strong>Acceptance Criteria</strong></p>
 <ul>
     <li>ETL pipeline executes once per session using Streamlit caching</li>
-    <li>Meaningful and readable error messages shown if ETL fails</li>
-    <li>The cleaned dataset is made available globally throughout the app</li>
 </ul>
 </div>
     """,

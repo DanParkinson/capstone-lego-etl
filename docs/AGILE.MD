@@ -224,14 +224,13 @@ Create the following output tables in `data/output/`:
 
 ## (4) Streamlit Application
 
-### US7 — Run ETL Automatically on Streamlit Startup
+### US7 — Streamlit App Loads the data
 - As a user, I want the ETL pipeline to run automatically when the Streamlit app starts,
 - So that the data is always fresh and processed.
 
 #### Acceptance Criteria
-- [ ] ETL runs once per session using caching
-- [ ] ETL failures produce readable error messages
-- [ ] Cleaned DataFrame available globally in the app
+- [x] ETL failures produce readable error messages
+- [x] Cleaned DataFrame available globally in the app
 
 #### Tests
 - [ ] placeholder
@@ -241,9 +240,9 @@ Create the following output tables in `data/output/`:
 - So that I can verify the pipeline output in the Streamlit UI.
 
 #### Acceptance Criteria
-- [ ] DataFrame preview visible (head or sample)
-- [ ] Columns match processed dataset
-- [ ] No performance issues on load
+- [x] DataFrame preview visible (head or sample)
+- [x] Columns match processed dataset
+- [x] No performance issues on load
 
 #### Tests
 - [ ] placeholder
@@ -253,9 +252,9 @@ Create the following output tables in `data/output/`:
 - So that I can explore the cleaned dataset easily.
 
 #### Acceptance Criteria
-- [ ] At least 3 charts implemented
-- [ ] Sidebar filters update visualisations dynamically
-- [ ] Empty filter results handled gracefully
+- [x] At least 3 charts implemented
+- [x] Sidebar filters update visualisations dynamically
+- [x] Empty filter results handled gracefully
 
 #### Tests
 - [ ] placeholder
@@ -269,10 +268,10 @@ Create the following output tables in `data/output/`:
 - So that I can recall key technical decisions for interviews.
 
 #### Acceptance Criteria
-- [ ] README explains project purpose, setup, and architecture
-- [ ] ETL flow diagram included
-- [ ] Developer notes cover challenges, trade-offs, lessons learned
-- [ ] Future improvements outlined
+- [x] README explains project purpose, setup, and architecture
+- [x] ETL flow diagram included
+- [x] Developer notes cover challenges, trade-offs, lessons learned
+- [x] Future improvements outlined
 
 #### Tests
 - No automated tests — completed via documentation checklist

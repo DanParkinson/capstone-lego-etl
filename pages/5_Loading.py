@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 from PIL import Image
 
 
@@ -186,15 +185,12 @@ st.markdown("## Loading Orchestrator — `create_tables()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ============================================================
-# COLUMN 1 — EXPLANATION
-# ============================================================
 with col1:
 
     st.markdown(
         """
     <div class="flexi-card">
-    <h3>What This Function Does</h3>
+    <h3>Thought Process</h3>
 
     <p>
     The <code>create_tables()</code> function orchestrates the entire 
@@ -219,7 +215,7 @@ with col1:
     st.markdown(
         """
     <div class="flexi-card">
-    <h3>Thought Process</h3>
+    <h3>Key Responsibilities</h3>
 
     <ul>
         <li>Keep the loading phase <strong>modular</strong> — each table has its own creator function</li>
@@ -238,10 +234,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
-# ============================================================
-# COLUMN 2 — CODE
-# ============================================================
 with col2:
     st.code(
         """
@@ -260,10 +252,6 @@ def create_tables(df: pd.DataFrame) -> pd.DataFrame:
         language="python",
     )
 
-
-# ============================================================
-# COLUMN 3 — TESTS
-# ============================================================
 with col3:
 
     st.markdown(
@@ -297,12 +285,7 @@ st.markdown("## Reusable Table Writer — `write_table()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ============================================================
-# COLUMN 1 — EXPLANATION
-# ============================================================
 with col1:
-
-    # Thought Process
     st.markdown(
         """
     <div class="flexi-card">
@@ -358,10 +341,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
-# ============================================================
-# COLUMN 2 — CODE BLOCK
-# ============================================================
 with col2:
     st.code(
         """
@@ -412,10 +391,6 @@ def write_table(
         language="python",
     )
 
-
-# ============================================================
-# COLUMN 3 — TESTS
-# ============================================================
 with col3:
 
     # Small top card
@@ -453,12 +428,8 @@ st.markdown("## Fact Table Creation — `create_product_listings_table()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ==============================================================
-# COLUMN 1 — EXPLANATION
-# ==============================================================
 with col1:
 
-    # Thought Process
     st.markdown(
         """
     <div class="flexi-card">
@@ -510,9 +481,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-# ==============================================================
-# COLUMN 2 — CODE BLOCK
-# ==============================================================
 with col2:
     st.code(
         """
@@ -547,9 +515,6 @@ def create_product_listings_table(
         language="python",
     )
 
-# ==============================================================
-# COLUMN 3 — TESTS
-# ==============================================================
 with col3:
 
     st.markdown(
@@ -596,4 +561,4 @@ st.markdown(
 )
 
 image = Image.open("docs/erd.png")
-st.image(image, use_container_width=True, caption="Relational Database Schema")
+st.image(image, caption="Relational Database Schema")

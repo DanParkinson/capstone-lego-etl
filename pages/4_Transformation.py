@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 
 st.set_page_config(page_title="Choice of Data", layout="wide")
 
@@ -14,10 +13,6 @@ st.subheader("Epic 2 — Data Cleaning and Transformation")
 # 3-column layout
 col1, col2, col3 = st.columns([1, 1, 1])
 
-
-# ----------------------------------------
-# US3 — Clean Numeric Columns (Generalised)
-# ----------------------------------------
 with col1:
     st.markdown(
         """
@@ -41,9 +36,6 @@ with col1:
     )
 
 
-# ----------------------------------------
-# US4 — Clean Text Columns (Generalised)
-# ----------------------------------------
 with col2:
     st.markdown(
         """
@@ -68,10 +60,6 @@ with col2:
         unsafe_allow_html=True,
     )
 
-
-# ----------------------------------------
-# US5 — Remove Duplicates & Validate Clean Data
-# ----------------------------------------
 with col3:
     st.markdown(
         """
@@ -177,7 +165,7 @@ def transform_data(df: pd.DataFrame) -> pd.DataFrame:
     # duplicates
     df = clean_duplicates(df)
 
-    # drop redundant ages column
+    # drop ages column
     df = df.drop(columns=["ages"], errors="ignore")
 
     logger.info("Transformation complete.")
@@ -209,15 +197,12 @@ st.markdown("## Example Transformation Function — `clean_ages()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ==========================
-# COLUMN 1 — EXPLANATION
-# ==========================
 with col1:
 
     st.markdown(
         """
     <div class="flexi-card">
-    <h3>What This Function Does</h3>
+    <h3>Thought Process</h3>
 
     <p>
     <strong><code>clean_ages()</code></strong> is one of the most complex 
@@ -240,7 +225,7 @@ with col1:
     </ul>
     </div>
     <div class="flexi-card">
-    <h4>Thought Process</h4>
+    <h4>Key Responsibilites</h4>
     <ul>
         <li>Standardise formats by converting everything to a string first</li>
         <li>Replace fractional unicode (½) with decimals</li>
@@ -258,10 +243,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
-# ==========================
-# COLUMN 2 — FUNCTION CODE
-# ==========================
 with col2:
     st.code(
         """
@@ -311,10 +292,6 @@ def clean_ages(df: pd.DataFrame) -> pd.DataFrame:
         language="python",
     )
 
-
-# ==========================
-# COLUMN 3 — TESTS
-# ==========================
 with col3:
 
     st.markdown(
@@ -358,15 +335,12 @@ st.markdown("## Duplicate & Corruption Cleaning — `clean_duplicates()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ==========================
-# COLUMN 1 — EXPLANATION
-# ==========================
 with col1:
 
     st.markdown(
         """
     <div class="flexi-card">
-    <h3>What This Function Does</h3>
+    <h3>Thought Process</h3>
 
     <p>
     The LEGO dataset contains many repeated products across different countries,
@@ -411,10 +385,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
-# ==========================
-# COLUMN 2 — FUNCTION CODE
-# ==========================
 with col2:
 
     st.code(
@@ -458,10 +428,6 @@ def clean_duplicates(df: pd.DataFrame) -> pd.DataFrame:
         language="python",
     )
 
-
-# ==========================
-# COLUMN 3 — TESTS
-# ==========================
 with col3:
 
     st.markdown(
@@ -499,9 +465,6 @@ st.markdown("## Clean Dataset Validation — `validate_clean_lego_data()`")
 
 col1, col2, col3 = st.columns([1, 1, 1], vertical_alignment="top")
 
-# ============================================================
-# COLUMN 1 — EXPLANATION
-# ============================================================
 with col1:
 
     st.markdown(
@@ -556,10 +519,6 @@ with col1:
         unsafe_allow_html=True,
     )
 
-
-# ============================================================
-# COLUMN 2 — FUNCTION CODE
-# ============================================================
 with col2:
 
     st.code(
@@ -596,10 +555,6 @@ def validate_clean_lego_data(df=pd.DataFrame) -> None:
         language="python",
     )
 
-
-# ============================================================
-# COLUMN 3 — TESTS
-# ============================================================
 with col3:
 
     st.markdown(

@@ -1,7 +1,6 @@
 import streamlit as st
-import pandas as pd
 
-st.set_page_config(page_title="LEGO Analytics", layout="wide")
+st.set_page_config(page_title="Choice of Data", layout="wide")
 
 # Load CSS
 with open("styles.css") as f:
@@ -22,7 +21,7 @@ with col1:
     st.markdown(
         """
         <div class="card">
-            <h3>Why This Dataset?</h3>
+            <h3>Why this dataset?</h3>
             <ul>
                 <li>It contains <strong>real-world product data</strong> (names, themes, prices, ages, descriptions).</li>
                 <li>Includes <strong>customer review information</strong> from multiple countries.</li>
@@ -40,7 +39,7 @@ with col1:
         </div>
 
         <div class="card">
-            <h3>What the Raw Dataset Looks Like</h3>
+            <h3>What the raw dataset looks like</h3>
             <p>
                 The source dataset arrives as <strong>one large CSV file</strong> (~12,000 rows),
                 with columns including:
@@ -92,7 +91,7 @@ with col1:
     st.markdown(
         """
         <div class="card tall-card">
-            <h3>Key Issues Identified in the Raw Data</h3>
+            <h3>Key issues identified in the raw data</h3>
 
         <p><strong>1. Mixed numeric formatting</strong></p>
         <ul>
@@ -124,7 +123,7 @@ with col2:
     st.markdown(
         """
         <div class="card tall-card">
-            <h3>What We Aim to Do in Cleaning</h3>
+            <h3>Cleaning goals</h3>
 
         <ul>
             <li>Convert numeric-like fields into true numeric types</li>
