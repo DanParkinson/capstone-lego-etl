@@ -64,10 +64,14 @@ Testing focused on reliability of critical logic rather than blanket coverage.
 
 ---
 
-[docs\erd.png]
+![ERD picture](docs/erd.png)
 
 ---
+## Documentation of the process
 
+All working processes were documented within the docs folder. Outlining user stories, sprints, and epics. 
+
+---
 ## Running the ETL
 
 Install dependencies:
